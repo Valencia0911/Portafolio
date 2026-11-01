@@ -1,0 +1,73 @@
+:root {
+    --color-crema: #F4EFE6;
+    --color-tinta: #24231F;
+    --color-vino: #743B46;
+    --color-oliva: #829078;
+    --color-ocre: #C8A977;
+
+    --font-titulo: 'EB Garamond', serif;
+    --font-subtitulo: 'Cormorant Garamond', serif;
+}
+
+body {
+    background-color: var(--color-crema);
+    color: var(--color-tinta);
+}
+
+.marca-subtitulo {
+    color: var(--color-vino);
+}
+
+#footer h4 {
+    color: var(--color-vino);
+}
+
+.btn-personalizado {
+    background-color: var(--color-oliva);
+    color: var(--color-crema);
+    border: 1px solid var(--color-oliva);
+    padding: 10px 22px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-personalizado:hover {
+    background-color: var(--color-vino);
+    color: var(--color-crema);
+    border-color: var(--color-vino);
+}
+
+.marca-titulo,
+#footer h5,
+#footer h4 {
+    font-family: var(--font-titulo);
+    font-weight: 700;
+}
+
+.marca-subtitulo {
+    font-family: var(--font-subtitulo);
+}
+
+#navbar {
+    padding-bottom: 0;
+}
+
+.linea-navbar {
+    margin: 0 0 16px;
+}
+
+.linea-editorial {
+    display: block;
+    width: 100%;
+    border: none;
+    border-top: 3px solid var(--color-tinta);
+    opacity: 1;
+}
+
+.linea-footer {
+    margin: 0 0 4px;
+}
+
+#footer .linea-editorial:not(.linea-footer) {
+    margin: 24px 0;
+}
